@@ -35,13 +35,13 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         view.addGestureRecognizer(tap)
         
         //Flow 2 - Check WiFi, alert if not on
-        if isWiFiConnected()==false {
-            turnOnWiFiAlert()
+        if isWiFiConnected()==true {
+            turnOffWiFiAlert()
         }
         
         //Flow 3 - Segue if logged in already
         if PFUser.current() != nil {
-            self.performSegue(withIdentifier: "intro", sender: nil)
+            self.performSegue(withIdentifier: "login", sender: nil)
         }
     }
     
@@ -52,7 +52,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             (user: PFUser?, error: Error?) -> Void in
             if user != nil {
                 // Successful login
-                self.performSegue(withIdentifier: "intro", sender: nil)
+                self.performSegue(withIdentifier: "login", sender: nil)
                 
             } else {
                 // failed login, error displayed to user
@@ -97,7 +97,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                     
                 } else {
                     //Successful signup
-                    self.performSegue(withIdentifier: "intro", sender: nil)
+                    self.performSegue(withIdentifier: "login", sender: nil)
                 }
             }
         }
@@ -133,9 +133,9 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
 //    }
     
     //Prompt user to turn on WiFi
-    func turnOnWiFiAlert() {
-        let alertTitle = "Location Accuracy"
-        let alertController = UIAlertController(title: alertTitle, message: "Turn on Wi-Fi to improve location accuracy", preferredStyle: UIAlertControllerStyle.alert)
+    func turnOffWiFiAlert() {
+        let alertTitle = "Network Accuracy"
+        let alertController = UIAlertController(title: alertTitle, message: "Turn off Wi-Fi to improve network accuracy", preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "Settings", style: UIAlertActionStyle.default, handler: openSettings))
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
         

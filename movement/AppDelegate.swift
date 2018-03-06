@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,13 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         
-//        // Initialize Parse
-//        let configuration = ParseClientConfiguration {
-//            $0.applicationId = "QXRTROGsVaRn4a3kw4gaFnHGNOsZxXoZ8ULxwZmf"
-//            $0.clientKey = "gINJkaTkxsafobZ0QFZ0HAT32tjdx06aoF6b2VNQ"
-//            $0.server = "https://crowdcheerdb.herokuapp.com/parse"
-//        }
-//        Parse.initialize(with: configuration)
+        // Initialize Parse
+        Parse.initialize(with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
+            configuration.server = "https://movementdb.herokuapp.com/parse/"
+            configuration.applicationId = "movementdb"
+        }))
         
         return true
     }
