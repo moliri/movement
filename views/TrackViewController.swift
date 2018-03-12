@@ -35,7 +35,7 @@ class TrackViewController: UIViewController, UITextFieldDelegate {
 //        userMonitor.startMonitoringRegion(startRegion)
         
         
-        interval = 1
+        interval = 60
         
         backgroundTaskIdentifier = UIApplication.shared.beginBackgroundTask(expirationHandler: {
             UIApplication.shared.endBackgroundTask(self.backgroundTaskIdentifier!)
@@ -51,6 +51,7 @@ class TrackViewController: UIViewController, UITextFieldDelegate {
         print("monitoring runner...")
         
         //start runner monitor
+        userMonitor.monitorUserNetworkSpeed()
         userMonitor.monitorUserLocation()
         userMonitor.updateUserPath(interval)
         userMonitor.updateUserLocation()

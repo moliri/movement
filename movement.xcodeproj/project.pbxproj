@@ -19,11 +19,14 @@
 		E27AF670204773DE00181B97 /* movementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27AF66F204773DE00181B97 /* movementUITests.swift */; };
 		E27AF67F2047748A00181B97 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27AF67E2047748A00181B97 /* SignUpViewController.swift */; };
 		E27AF681204774C900181B97 /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27AF680204774C900181B97 /* TrackViewController.swift */; };
-		E27AF6862047751900181B97 /* monitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27AF6852047751900181B97 /* monitor.swift */; };
 		E27AF688204782E900181B97 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E27AF687204782E900181B97 /* Parse.framework */; };
 		E27AF68B204783A100181B97 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E27AF68A204783A100181B97 /* Bolts.framework */; };
 		E27AF6902047880700181B97 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27AF68D2047880700181B97 /* Reachability.swift */; };
 		E27AF6912047880700181B97 /* MathController.m in Sources */ = {isa = PBXBuildFile; fileRef = E27AF68E2047880700181B97 /* MathController.m */; };
+		E2E66C6C20570793009EA967 /* HDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E66C6920570793009EA967 /* HDownloader.m */; };
+		E2E66C6D20570793009EA967 /* HTestResults.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E66C6B20570793009EA967 /* HTestResults.m */; };
+		E2E66C7620572CB6009EA967 /* monitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E66C7520572CB6009EA967 /* monitor.swift */; };
+		E2E66C78205730F7009EA967 /* HMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E66C77205730F7009EA967 /* HMonitor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,13 +71,20 @@
 		E27AF671204773DE00181B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E27AF67E2047748A00181B97 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = views/SignUpViewController.swift; sourceTree = "<group>"; };
 		E27AF680204774C900181B97 /* TrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackViewController.swift; path = views/TrackViewController.swift; sourceTree = "<group>"; };
-		E27AF6852047751900181B97 /* monitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = monitor.swift; path = model/monitor.swift; sourceTree = "<group>"; };
 		E27AF687204782E900181B97 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		E27AF6892047834600181B97 /* movement-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "movement-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		E27AF68A204783A100181B97 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		E27AF68D2047880700181B97 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = lib/Reachability.swift; sourceTree = "<group>"; };
 		E27AF68E2047880700181B97 /* MathController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MathController.m; path = lib/MathController.m; sourceTree = "<group>"; };
 		E27AF68F2047880700181B97 /* MathController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MathController.h; path = lib/MathController.h; sourceTree = "<group>"; };
+		E2E66C6820570793009EA967 /* HDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HDownloader.h; path = lib/HDownloader.h; sourceTree = "<group>"; };
+		E2E66C6920570793009EA967 /* HDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HDownloader.m; path = lib/HDownloader.m; sourceTree = "<group>"; };
+		E2E66C6A20570793009EA967 /* HTestResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTestResults.h; path = lib/HTestResults.h; sourceTree = "<group>"; };
+		E2E66C6B20570793009EA967 /* HTestResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTestResults.m; path = lib/HTestResults.m; sourceTree = "<group>"; };
+		E2E66C6F20570E0D009EA967 /* HDownloadTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HDownloadTestDelegate.h; path = lib/HDownloadTestDelegate.h; sourceTree = "<group>"; };
+		E2E66C7320570EC8009EA967 /* HMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HMonitor.h; path = lib/HMonitor.h; sourceTree = "<group>"; };
+		E2E66C7520572CB6009EA967 /* monitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = monitor.swift; sourceTree = "<group>"; };
+		E2E66C77205730F7009EA967 /* HMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HMonitor.m; path = lib/HMonitor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,12 +145,9 @@
 		E27AF643204773DE00181B97 = {
 			isa = PBXGroup;
 			children = (
-				E27AF68E2047880700181B97 /* MathController.m */,
-				E27AF68F2047880700181B97 /* MathController.h */,
-				E27AF68D2047880700181B97 /* Reachability.swift */,
+				E2E66C7520572CB6009EA967 /* monitor.swift */,
 				E27AF6892047834600181B97 /* movement-Bridging-Header.h */,
 				E27AF68C204786ED00181B97 /* lib */,
-				E27AF682204774D300181B97 /* model */,
 				E27AF67D2047744700181B97 /* views */,
 				E27AF64E204773DE00181B97 /* movement */,
 				E27AF663204773DE00181B97 /* movementTests */,
@@ -201,17 +208,19 @@
 			name = views;
 			sourceTree = "<group>";
 		};
-		E27AF682204774D300181B97 /* model */ = {
-			isa = PBXGroup;
-			children = (
-				E27AF6852047751900181B97 /* monitor.swift */,
-			);
-			name = model;
-			sourceTree = "<group>";
-		};
 		E27AF68C204786ED00181B97 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				E2E66C77205730F7009EA967 /* HMonitor.m */,
+				E2E66C7320570EC8009EA967 /* HMonitor.h */,
+				E2E66C6F20570E0D009EA967 /* HDownloadTestDelegate.h */,
+				E2E66C6820570793009EA967 /* HDownloader.h */,
+				E2E66C6920570793009EA967 /* HDownloader.m */,
+				E2E66C6A20570793009EA967 /* HTestResults.h */,
+				E2E66C6B20570793009EA967 /* HTestResults.m */,
+				E27AF68E2047880700181B97 /* MathController.m */,
+				E27AF68F2047880700181B97 /* MathController.h */,
+				E27AF68D2047880700181B97 /* Reachability.swift */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -522,11 +531,14 @@
 			files = (
 				E27AF681204774C900181B97 /* TrackViewController.swift in Sources */,
 				E27AF67F2047748A00181B97 /* SignUpViewController.swift in Sources */,
+				E2E66C6D20570793009EA967 /* HTestResults.m in Sources */,
+				E2E66C78205730F7009EA967 /* HMonitor.m in Sources */,
 				E27AF6902047880700181B97 /* Reachability.swift in Sources */,
 				E27AF652204773DE00181B97 /* ViewController.swift in Sources */,
-				E27AF6862047751900181B97 /* monitor.swift in Sources */,
 				E27AF650204773DE00181B97 /* AppDelegate.swift in Sources */,
 				E27AF6912047880700181B97 /* MathController.m in Sources */,
+				E2E66C7620572CB6009EA967 /* monitor.swift in Sources */,
+				E2E66C6C20570793009EA967 /* HDownloader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,6 +703,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.northwestern.delta.movement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "movement-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "movement-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -711,6 +725,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.northwestern.delta.movement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "movement-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

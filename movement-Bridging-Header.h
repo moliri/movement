@@ -9,7 +9,10 @@
 #ifndef movement_Bridging_Header_h
 #define movement_Bridging_Header_h
 
-#import "MathController.h"
+#import "lib/HDownloader.h"
+#import "lib/HTestResults.h"
+#import "lib/HMonitor.h"
+#import "lib/MathController.h"
 #import "Parse/Parse.h"
 #import "Parse/PFGeoPoint.h"
 

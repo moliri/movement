@@ -23,6 +23,7 @@ protocol Monitor: Any {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
     func isNetworkReachable() -> Bool
+    func monitorUserNetworkSpeed()
     func monitorUserLocation()
     func updateUserPath(_ interval: Int)
     func updateUserLocation()
@@ -156,6 +157,20 @@ class RunnerMonitor: NSObject, Monitor, CLLocationManagerDelegate {
         }
         else if (region.identifier == "finishRegion") {
             
+        }
+    }
+    
+    func monitorUserNetworkSpeed() {
+        
+        let test = HDownloader.init()
+        let downloadURL = "https://github.com/fivethirtyeight/data/archive/master.zip"
+        let interval = 10.0
+        let testTime = 20.0
+        
+        let isTestRunning = test.doDownloadTest(forURLString: downloadURL, withTestTime: testTime, andInterval: interval)
+        
+        if (isTestRunning) {
+            print("network test started")
         }
     }
     
